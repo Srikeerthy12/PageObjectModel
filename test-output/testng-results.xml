@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17871" started-at="2018-03-08T06:05:12Z" finished-at="2018-03-08T06:05:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17871" started-at="2018-03-08T06:05:12Z" finished-at="2018-03-08T06:05:30Z">
+      <class name="com.test.automations.UiPomAutomations.LoginPage.Tc_login">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.automations.UiPomAutomations.LoginPage.Tc_login@553f17c]" name="setUp" is-config="true" duration-ms="14051" started-at="2018-03-07T22:05:12Z" finished-at="2018-03-07T22:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_login()[pri:0, instance:com.test.automations.UiPomAutomations.LoginPage.Tc_login@553f17c]" name="tc_login" duration-ms="3188" started-at="2018-03-07T22:05:26Z" finished-at="2018-03-07T22:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_login -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.test.automations.UiPomAutomations.LoginPage.Tc_login@553f17c]" name="endTest" is-config="true" duration-ms="598" started-at="2018-03-07T22:05:29Z" finished-at="2018-03-07T22:05:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.test.automations.UiPomAutomations.LoginPage.Tc_login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
