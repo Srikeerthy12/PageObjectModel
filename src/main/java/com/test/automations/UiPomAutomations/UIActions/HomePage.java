@@ -50,12 +50,21 @@ public class HomePage extends TestBase{
 	@FindBy(css="input.btn")
 	WebElement createAccount;
 	
-	@FindBy(xpath="getRegistrationSuccessmessage")
+	@FindBy(xpath="//*[@id='shopify-section-header']/div/div[2]/span")
 	WebElement registrationsmessage;
 	
-
+	@FindBy(xpath="//*[@id='customer_login_link']")
+	WebElement loginLink;
 	
-	public HomePage(WebDriver driver){
+	@FindBy(id="CustomerEmail")
+	WebElement loginEmail;
+	
+	@FindBy(xpath=".//*[@id='CustomerPassword']")
+	WebElement password;
+	
+	@FindBy(xpath=".//*[@id='customer_login']/p[1]/input")
+	WebElement clickOnSignIn;
+	   public HomePage(WebDriver driver){
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -112,5 +121,17 @@ public boolean getRegistrationSuccessmessage(){
 	
 //log.info("registartion message"+registrationsmessage.getText());
 	// return registrationsmessage.getText();
+	
+	
+
 }
+
+public void logindemoSite(String emailAddress, String loginPassword2) {
+	loginLink.click();
+	loginEmail.sendKeys(emailAddress);
+	password.sendKeys(loginPassword);
+	clickOnSignIn.click();
+	
+}
+
 }
