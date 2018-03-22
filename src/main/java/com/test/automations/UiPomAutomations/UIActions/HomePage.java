@@ -64,6 +64,10 @@ public class HomePage extends TestBase{
 	
 	@FindBy(xpath=".//*[@id='customer_login']/p[1]/input")
 	WebElement clickOnSignIn;
+	
+	@FindBy(xpath= "")
+	WebElement logout;
+	
 	   public HomePage(WebDriver driver){
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -119,19 +123,47 @@ public boolean getRegistrationSuccessmessage(){
 		return false;
 	}
 	
-//log.info("registartion message"+registrationsmessage.getText());
+//log.info("Registration message"+registrationsmessage.getText());
 	// return registrationsmessage.getText();
 	
 	
 
 }
 
-public void logindemoSite(String emailAddress, String loginPassword2) {
+public void logindemoSite(String emailAddress, String loginPassword) {
 	loginLink.click();
 	loginEmail.sendKeys(emailAddress);
 	password.sendKeys(loginPassword);
 	clickOnSignIn.click();
+	driver.switchTo().defaultContent();
 	
 }
-
+public boolean verifyLogoutDisplay(){
+	try {
+		driver.switchTo().frame(homepageIframe);
+		//waitForElement(300, logout);
+		logout.isDisplayed();
+		log.info("===logout message option is displayed-----" +logout.toString());
+		return true;
+	} catch (Exception e) {
+		return false;
+	}
+}
+	public void clickOnLogout(){
+		driver.switchTo().frame(homepageIframe);
+		logout.click();
+		log.info("clicked on Logout button" + logout.toString());
+}
+public void clickOnNavigationMenu(String menuName){
+	driver.findElement(By.xpath("")).click();// write xpath init
+  log.info("clcikd on : "+menuName+" navigation menu");
+  
+  
+}
+public void clickOnProductInMensSection(String product){
+	driver.findElement(By.xpath("")).click();
+	}
+public void clickOnProductInWomensSection(String product){
+	driver.findElement(By.xpath("")).click();
+	}
 }

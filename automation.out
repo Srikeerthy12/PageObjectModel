@@ -23,3 +23,10 @@
 2018-03-07 22:05:29 INFO  HomePage:73 - clicked on submit button and object is [[FirefoxDriver: firefox on XP (b9e66b59-fdf8-4b09-9d24-ccd7d1f3f8ce)] -> xpath: //*[@id='SubmitLogin']]
 2018-03-07 22:05:29 INFO  HomePage:78 - error messsage is Authentication failed.
 2018-03-07 22:05:29 INFO  Tc_login:42 - --Finished Verfication Login---
+2018-03-08 22:33:56 INFO  Tc_login:38 - ---Start of Login Verifcation----
+2018-03-08 22:33:58 INFO  HomePage:78 - clciked on sign in and objectis[[FirefoxDriver: firefox on XP (905c65a8-f6b8-4ef4-9634-b87eec0ee601)] -> xpath: //*[@id='header']/div[2]/div/div/nav/div[1]/a]
+2018-03-08 22:33:59 INFO  HomePage:81 - Enter emailAddressskeerthyandy@gmail.com and object is [[FirefoxDriver: firefox on XP (905c65a8-f6b8-4ef4-9634-b87eec0ee601)] -> xpath: //*[@id='email']]
+2018-03-08 22:33:59 INFO  HomePage:83 - enetered password keerthia23 and object is [[FirefoxDriver: firefox on XP (905c65a8-f6b8-4ef4-9634-b87eec0ee601)] -> xpath: //*[@id='passwd']]
+2018-03-08 22:34:01 INFO  HomePage:86 - clicked on submit button and object is [[FirefoxDriver: firefox on XP (905c65a8-f6b8-4ef4-9634-b87eec0ee601)] -> xpath: //*[@id='SubmitLogin']]
+2018-03-08 22:34:01 INFO  HomePage:91 - error messsage is Authentication failed.
+2018-03-08 22:34:01 INFO  Tc_login:42 - --Finished Verfication Login---
